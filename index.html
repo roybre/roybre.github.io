@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כתבה לעיתון - מסע אל העבר</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;500;700&family=Heebo:wght@300;400;700&display=swap');
+
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #8e44ad;
+            --paper-bg: #fdfbf7;
+            --text-color: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .newspaper-page {
+            background-color: var(--paper-bg);
+            width: 100%;
+            max-width: 900px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            color: var(--text-color);
+            position: relative;
+        }
+
+        /* Header Styles */
+        header {
+            border-bottom: 3px double var(--primary-color);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .publication-info {
+            font-family: 'Frank Ruhl Libre', serif;
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-family: 'Frank Ruhl Libre', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            line-height: 1.1;
+            color: var(--primary-color);
+        }
+
+        h2 {
+            font-family: 'Frank Ruhl Libre', serif;
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin: 10px 0 20px 0;
+            color: #444;
+            font-style: italic;
+        }
+
+        .byline {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--accent-color);
+        }
+
+        /* Content Layout */
+        .content {
+            column-count: 2;
+            column-gap: 40px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .lead-paragraph {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        h3 {
+            font-family: 'Frank Ruhl Libre', serif;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            margin-top: 30px;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .question {
+            font-weight: bold;
+            color: var(--accent-color);
+            display: block;
+            margin-top: 15px;
+        }
+
+        .answer {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        /* Image Styles */
+        figure {
+            margin: 20px 0;
+            break-inside: avoid;
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            background-color: #ddd; /* Placeholder color */
+            min-height: 200px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            font-family: 'Frank Ruhl Libre', serif;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 8px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .pull-quote {
+            font-family: 'Frank Ruhl Libre', serif;
+            font-size: 1.4rem;
+            line-height: 1.4;
+            color: var(--accent-color);
+            border-top: 2px solid var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding: 15px 0;
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            break-inside: avoid;
+        }
+
+        /* Footer */
+        .footer-note {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-size: 0.9rem;
+            color: #555;
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                column-count: 1;
+            }
+            .newspaper-page {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="newspaper-page">
+        <header>
+            <div class="publication-info">
+                <span>עיתון "זהות" - מהדורה מיוחדת</span>
+                <span>ינואר 2026</span>
+                <span>בית ספר "הראשונים"</span>
+            </div>
+            <h1>מסע אל העבר: הילדה שהפכה לאמא שלי</h1>
+            <h2>ראיון מיוחד עם ענבל ברגמן על ילדות, בלט, צופים וזיכרונות מתוקים</h2>
+            <div class="byline">מאת: מיקה ברגמן, כתבת העיתון</div>
+        </header>
+
+        <article class="content">
+            <p class="lead-paragraph">
+                במסגרת עבודת השורשים, יצאתי למסע בזמן אל הילדות של אמי, ענבל. רגילה לראות אותה בתפקיד "אמא", הופתעתי לגלות ילדה ונערה פעילה, רקדנית בלט מושבעת וחניכה בצופים, שגדלה בשכונה מלאה בזיכרונות ואנשים מיוחדים.
+            </p>
+
+            <figure>
+                <!-- שימי לב: יש לשמור את תמונת החדר בשם room.jpg באותה תיקייה -->
+                <img src="room.jpg" alt="החדר של אמא" onerror="this.src='https://placehold.co/600x400/e0e0e0/555555?text=שמרו+תמונה+בשם:+room.jpg';">
+                <figcaption>החדר של אמא בבית ילדותה - המקום בו הכל התחיל</figcaption>
+            </figure>
+
+            <h3>"הבלט היה כל עולמי"</h3>
+            <span class="question">מיקה: אמא, כשאני מסתכלת על התמונות שלך מהילדות, בולט מאוד עניין הריקוד. ספרי לי על התחביב הזה.</span>
+            <span class="answer">ענבל: "וואו, בלט היה חלק ענק מהחיים שלי. לא סתם חוג של פעם בשבוע, אלא ממש דרך חיים. ביליתי שעות בסטודיו, מול המראה, באימונים מפרכים אבל מספקים. הריקוד לימד אותי משמעת עצמית והתמדה."</span>
+
+            <div class="pull-quote">
+                "הריקוד לימד אותי משמעת עצמית, התמדה ואיך לעמוד על במה – דברים שמלווים אותי עד היום."
+            </div>
+
+            <h3>מ"הצופים" לחיים הבוגרים</h3>
+            <span class="question">מיקה: בחרת להיות חברה בתנועת "הצופים". מה משך אותך לשם ומה זה נתן לך?</span>
+            <span class="answer">ענבל: "הייתי 'צופיפניקית' גאה. תנועת הנוער הייתה המקום שבו הרגשנו גדולים ועצמאיים. הפעולות, הטיולים, המדים (חאקי), והחברים – זה היה הווי חברתי מאוד משמעותי. שם למדתי לקחת אחריות ולעבוד בצוות."</span>
+            
+            <figure>
+                <!-- שימי לב: יש לשמור את תמונת בית הספר בשם school.jpg באותה תיקייה -->
+                <img src="school.jpg" alt="התיכון של אמא" onerror="this.src='https://placehold.co/600x400/e0e0e0/555555?text=שמרו+תמונה+בשם:+school.jpg';">
+                <figcaption>בית הספר התיכון בו למדה אמא וצברה חוויות רבות</figcaption>
+            </figure>
+
+            <h3>השכונה והאנשים של פעם</h3>
+            <span class="question">מיקה: מי הדמות שזכורה לך במיוחד מהשכונה שבה גדלת?</span>
+            <span class="answer">ענבל: "אי אפשר לדבר על הילדות שלי בלי להזכיר את השכנים. דמות מיוחדת היא רחל באסה, השכנה של סבתא. הקשר איתה היה מיוחד, היא הייתה חלק מהנוף של הילדות שלי. כשביקרנו שם, היה מרגש לראות מה היא כתבה עלי."</span>
+
+            <figure>
+                <!-- שימי לב: יש לשמור את תמונת המכתב בשם letter.jpg באותה תיקייה -->
+                <img src="letter.jpg" alt="ההודעה של רחל" onerror="this.src='https://placehold.co/600x400/e0e0e0/555555?text=שמרו+תמונה+בשם:+letter.jpg';">
+                <figcaption>ההודעה שכתבה רחל באסה, השכנה של סבתא</figcaption>
+            </figure>
+
+            <h3>סיכום אישי</h3>
+            <span class="question">מיקה: לסיום, מה את חושבת שלקחת מענבל הילדה להורות שלך היום?</span>
+            <span class="answer">ענבל: "העיסוק בבלט והחברות בצופים נתנו לי כלים שאני מנסה להעביר גם לכם: להשקיע במשהו שאתה אוהב, להיות חבר טוב, ולזכור מאיפה באת. אני שמחה שגם אתם זוכים לילדות מלאה."</span>
+
+            <div class="footer-note">
+                <strong>מחשבות של כתבת צעירה:</strong><br>
+                הראיון עם אמא גרם לי להבין שההורים שלנו היו פעם ילדים עם חלומות בדיוק כמונו. היה מעניין לגלות את הצד האומנותי של אמא ואת הצד החברתי בצופים. הסיפורים שלה עוזרים לי להכיר אותה לא רק כאמא, אלא כענבל.
+            </div>
+        </article>
+    </div>
+
+</body>
+</html>
